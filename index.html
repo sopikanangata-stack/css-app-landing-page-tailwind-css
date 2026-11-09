@@ -4,10 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
+    <meta
+      name="description"
+      content="Streamline your workflow with the all-in-one Acme productivity app."
+    />
+    <title>Acme — Boost Your Productivity</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="min-h-screen bg-[#f7f6fb] font-sans text-[#191927] antialiased">
+    <div class="min-h-screen px-3 pt-3">
+      <header
+        class="mx-auto flex h-11 max-w-[1200px] items-center justify-between rounded-full bg-white px-6 shadow-[0_3px_14px_rgba(30,25,70,0.04)] sm:px-11"
+      >
+        <a
+          href="#home"
+          class="text-base font-bold tracking-[-0.04em]"
+          aria-label="Acme home"
+        >
+          Acme<span class="text-[#6547f5]">•</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="flex items-center gap-5 text-[9px] font-medium sm:gap-7 sm:text-[10px]">
+            <li>
+              <a href="#home" class="text-[#6547f5] underline underline-offset-2">Home</a>
+            </li>
+            <li><a href="#features" class="transition-colors hover:text-[#6547f5]">Features</a></li>
+            <li><a href="#pricing" class="transition-colors hover:text-[#6547f5]">Pricing</a></li>
+            <li><a href="#contact" class="transition-colors hover:text-[#6547f5]">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main
+        id="home"
+        class="flex min-h-[calc(100vh-68px)] flex-col items-center justify-center px-4 pb-2 text-center"
+      >
+        <div
+          class="mb-5 inline-flex items-center gap-1 rounded-full bg-[#e9e5fc] px-3 py-1 text-[9px] font-medium text-[#6547f5]"
+        >
+          <span aria-hidden="true">🌈</span>
+          <span>Acme Productivity App</span>
+        </div>
+        <h1 class="text-[clamp(2.5rem,7vw,4.35rem)] font-extrabold leading-[1.05] tracking-[-0.055em]">
+          Boost Your <span class="text-[#6547f5]">Product</span>ivity
+        </h1>
+        <p class="mt-3 text-sm font-semibold tracking-[-0.02em] sm:text-base">
+          Streamline your workflow with our all-in-one productivity app.
+        </p>
+        <a
+          href="#features"
+          class="mt-5 inline-flex h-8 items-center justify-center rounded-[10px] bg-[#191927] px-5 text-[9px] font-medium text-white transition-colors hover:bg-[#6547f5] focus:outline-none focus:ring-2 focus:ring-[#6547f5] focus:ring-offset-2"
+        >
+          Start Free Trial
+        </a>
+      </main>
+    </div>
   </body>
 </html>
