@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Streamline your workflow with the all-in-one Acme productivity app."
-    />
-    <title>Acme — Boost Your Productivity</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
   </head>
+
   <body class="min-h-screen bg-[#f7f6fb] font-sans text-[#191927] antialiased">
     <div class="min-h-screen px-3 pt-3">
       <header
-        class="mx-auto flex h-11 max-w-[1200px] items-center justify-between rounded-full bg-white px-6 shadow-[0_3px_14px_rgba(30,25,70,0.04)] sm:px-11"
-      >
-        <a
-          href="#home"
-          class="text-base font-bold tracking-[-0.04em]"
-          aria-label="Acme home"
-        >
+        class="mx-auto flex h-11 max-w-[1200px] items-center justify-between rounded-full bg-white px-6 shadow-[0_3px_14px_rgba(30,25,70,0.04)] sm:px-11">
+        <a href="#home" class="text-base font-bold tracking-[-0.04em]" aria-label="Acme home">
           Acme<span class="text-[#6547f5]">•</span>
         </a>
         <nav aria-label="Main navigation">
@@ -35,13 +31,9 @@
         </nav>
       </header>
 
-      <main
-        id="home"
-        class="flex min-h-[calc(100vh-68px)] flex-col items-center justify-center px-4 pb-2 text-center"
-      >
+      <main id="home" class="flex min-h-[calc(100vh-68px)] flex-col items-center justify-center px-4 pb-2 text-center">
         <div
-          class="mb-5 inline-flex items-center gap-1 rounded-full bg-[#e9e5fc] px-3 py-1 text-[9px] font-medium text-[#6547f5]"
-        >
+          class="mb-5 inline-flex items-center gap-1 rounded-full bg-[#e9e5fc] px-3 py-1 text-[9px] font-medium text-[#6547f5]">
           <span aria-hidden="true">🌈</span>
           <span>Acme Productivity App</span>
         </div>
@@ -51,19 +43,17 @@
         <p class="mt-3 text-sm font-semibold tracking-[-0.02em] sm:text-base">
           Streamline your workflow with our all-in-one productivity app.
         </p>
-        <a
-          href="#features"
-          class="mt-5 inline-flex h-8 items-center justify-center rounded-[10px] bg-[#191927] px-5 text-[9px] font-medium text-white transition-colors hover:bg-[#6547f5] focus:outline-none focus:ring-2 focus:ring-[#6547f5] focus:ring-offset-2"
-        >
+        <a href="#features"
+          class="mt-5 inline-flex h-8 items-center justify-center rounded-[10px] bg-[#191927] px-5 text-[9px] font-medium text-white transition-colors hover:bg-[#6547f5] focus:outline-none focus:ring-2 focus:ring-[#6547f5] focus:ring-offset-2">
           Start Free Trial
         </a>
       </main>
     </div>
 
     <section class="w-full max-w-5xl mx-auto my-12">
-    
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-  
+
         <div class="bg-gradient-to-br from-blue-100/70 to-indigo-100/70 p-8 rounded-2xl">
           <div class="w-10 h-10 bg-indigo-500 text-white rounded-xl flex items-center justify-center mb-6 shadow-sm">
             🚀
@@ -73,7 +63,7 @@
             Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
           </p>
         </div>
-  
+
         <div class="bg-gradient-to-br from-indigo-100/70 to-purple-100/70 p-8 rounded-2xl">
           <div class="w-10 h-10 bg-indigo-500 text-white rounded-xl flex items-center justify-center mb-6 shadow-sm">
             ⚡
@@ -83,7 +73,7 @@
             Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
           </p>
         </div>
-  
+
         <div class="bg-gradient-to-br from-purple-100/70 to-pink-100/70 p-8 rounded-2xl">
           <div class="w-10 h-10 bg-indigo-500 text-white rounded-xl flex items-center justify-center mb-6 shadow-sm">
             😊
@@ -95,5 +85,85 @@
         </div>
       </div>
     </section>
+
+    <title>Get in Touch</title>
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+            colors: {
+              page: '#f7f7fb',   // พื้นหลังของหน้า
+              card: '#fbfbfe',   // พื้นหลังของการ์ด
+              ink: '#1a1a2e',    // สีตัวอักษรหลัก / ปุ่ม
+            },
+          },
+        },
+      };
+    </script>
+    </head>
+
+    <body class="min-h-screen bg-page font-sans text-ink antialiased">
+      <div class="mx-auto flex min-h-screen max-w-[1000px] flex-col px-4 py-12 sm:px-10">
+
+        <!-- การ์ดฟอร์ม -->
+        <main class="rounded-3xl bg-card px-6 py-14 sm:px-10">
+          <h1 class="text-center text-4xl font-extrabold tracking-tight">Get in Touch</h1>
+
+          <form class="mx-auto mt-10 w-full max-w-[376px] space-y-5" action="#" method="post">
+            <!-- Name -->
+            <div>
+              <label for="name" class="mb-1.5 block text-xs font-medium text-slate-500">Name</label>
+              <input id="name" name="name" type="text" placeholder="John Doe" class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-ink
+                   placeholder:text-slate-400 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/10" />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="mb-1.5 block text-xs font-medium text-slate-500">Email</label>
+              <input id="email" name="email" type="email" placeholder="john@example.com" class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-ink
+                   placeholder:text-slate-400 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/10" />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="mb-1.5 block text-xs font-medium text-slate-500">Message</label>
+              <textarea id="message" name="message" rows="3" placeholder="Your message..."
+                class="w-full resize-y rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-ink
+                   placeholder:text-slate-400 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/10"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="mt-2 w-full rounded-xl bg-ink py-3 text-sm font-semibold text-white transition
+                 hover:bg-ink/90 focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2">
+              Submit
+            </button>
+          </form>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-auto flex flex-col items-center justify-between gap-4 pt-12 text-xs sm:flex-row">
+          <p class="text-slate-500">Acme productivity app ©2024</p>
+          <nav class="flex gap-6 font-semibold">
+            <a href="#" class="hover:underline">FAQ</a>
+            <a href="#" class="hover:underline">Terms</a>
+            <a href="#" class="hover:underline">AI Policy</a>
+            <a href="#" class="hover:underline">Pricing</a>
+          </nav>
+        </footer>
+
+      </div>
+    </body>
   </body>
+
 </html>
