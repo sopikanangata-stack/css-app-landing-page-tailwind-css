@@ -1,0 +1,100 @@
+/* ==========================================
+   1. ค่าพื้นฐานทั่วไป (Mobile-First / 375px Base)
+   ========================================== */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 15px; /* เว้นขอบซ้าย-ขวาเล็กน้อยสำหรับมือถือ */
+    background-color: #f8f9fc;
+    color: #1a1a1a;
+  }
+  
+  /* Header & Navbar สำหรับมือถือ (375px) */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: none; /* ซ่อนเมนูปกติในมือถือ แล้วเตรียมทำ Hamburger Menu */
+  }
+  
+  /* Hero Section สำหรับมือถือ */
+  .hero {
+    text-align: center;
+    padding: 30px 10px;
+  }
+  
+  .hero h1 {
+    font-size: 28px; /* ย่อฟอนต์ให้ไม่ล้นจอ 375px */
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  /* Feature Cards สำหรับมือถือ (เรียงแถวเดี่ยวแนวตั้ง) */
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .feature-card {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  /* Contact Form สำหรับมือถือ */
+  form {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+  }
+   
+  /* ==========================================
+     3. สำหรับหน้าจอคอมพิวเตอร์ (>= 1024px ถึง 1920px)
+     ========================================== */
+  @media screen and (min-width: 1024px) {
+    /* แสดงเมนูปกติบนคอม */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+  
+    /* เปลี่ยนการ์ด 3 กล่องให้เรียงเป็นแนวนอน (Row) */
+    .features-container {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .feature-card {
+      width: 30%; /* แบ่งกันคนละ 30% ในหนึ่งแถว */
+    }
+  }
+  
+  
+  /* ==========================================
+     4. สำหรับจอคอมพิวเตอร์ขนาดใหญ่ (1920px ขึ้นไป)
+     ========================================== */
+  @media screen and (min-width: 1920px) {
+    /* ครอบ Container ไม่ให้เนื้อหายืดยาวติดขอบจอจนเกินไป */
+    body {
+      max-width: 1440px; /* หรือ 1600px ตามดีไซน์ที่ต้องการ */
+      margin: 0 auto;    /* จัดให้อยู่กึ่งกลางจอ 1920px พอดี */
+      padding: 50px;
+    }
+  
+    .hero h1 {
+      font-size: 56px; /* ขยายฟอนต์ให้สม Sized กับจอใหญ่ 1920px */
+    }
+  }
